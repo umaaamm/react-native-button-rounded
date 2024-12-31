@@ -1,12 +1,20 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-button-rounded';
-
-const result = multiply(3, 7);
+import { View, StyleSheet, Image } from 'react-native';
+import AppButton from "react-native-button-rounded";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <AppButton
+        onPress={() => console.log("Pressed")}
+        accessibilityLabel="Rounded Button"
+        textStyles={{
+          fontSize: 18,
+          fontWeight: "bold",
+          color: "white"
+        }}
+        height={60}
+        width={200}
+      >Press Me!!</AppButton>
     </View>
   );
 }

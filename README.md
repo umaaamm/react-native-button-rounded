@@ -12,11 +12,23 @@ npm install react-native-button-rounded
 
 
 ```js
-import { multiply } from 'react-native-button-rounded';
+import AppButton from "react-native-button-rounded";
 
 // ...
 
-const result = await multiply(3, 7);
+<AppButton
+    onPress={() => console.log("Pressed")}
+    accessibilityLabel="Rounded Button"
+    textStyles={{
+        fontSize: 18,
+          fontWeight: "bold",
+          color: "white"
+        }}
+    height={60}
+    width={200}>
+    Press Me!!
+</AppButton>
+
 ```
 
 

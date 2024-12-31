@@ -1,6 +1,6 @@
 {
-  "name": "react-native-button-rounded",
-  "version": "0.1.0",
+  "name": "@umaaamm/react-native-button-rounded",
+  "version": "0.1.3",
   "description": "Library for custom component button",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -61,7 +61,7 @@
   },
   "homepage": "https://github.com/umaaamm/react-native-button-rounded#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
@@ -196,5 +196,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.45.5"
+  },
+  "dependencies": {
+    "@react-native-community/cli": "^15.1.3"
   }
 }
